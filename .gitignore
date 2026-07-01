@@ -1,0 +1,25 @@
+# Node Modules
+node_modules/
+
+# Environment files
+.env
+
+# Playwright
+playwright-report/
+test-results/
+
+# Allure
+allure-results/
+allure-report/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
