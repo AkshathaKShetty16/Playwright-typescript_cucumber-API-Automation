@@ -3,12 +3,11 @@ module.exports = {
     requireModule: ['ts-node/register'],
     require: [
       'features/step_definitions/**/*.ts',
-      'features/support/**/*.ts',
+      'features/support/**/*.ts'
     ],
-    paths: ['features/**/*.feature'],
-    format: ['progress-bar', 'summary', 'allure-cucumberjs/reporter'],
-    parallel: 4,
+    paths: [
+      'features/**/*.feature'
+    ],
     publishQuiet: true
-
-  },
+  }
 };
