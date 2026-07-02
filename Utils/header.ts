@@ -2,6 +2,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-export const header = {
-    'x-api-key': process.env.API_KEY!
-};
+const apiKey = process.env.API_KEY?.trim();
+
+export const header = apiKey ? { 'x-api-key': apiKey } : {};
