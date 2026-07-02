@@ -7,7 +7,7 @@ Feature: User Management
         Given I have valid user data
         When GET request is made to fetch the user details with the user ID "2"
         Then the response status code should be 200
-        And the response body should contain the user details "Janet"
+        And the response body should contain the user details "Ervin Howell"
 
 
     # Scenario: Create a new user
