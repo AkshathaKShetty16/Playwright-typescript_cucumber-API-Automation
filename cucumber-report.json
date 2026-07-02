@@ -1,0 +1,1088 @@
+[
+  {
+    "description": "  As an API tester\n  I want to exercise GET, POST, PUT and DELETE endpoints\n  So that I can showcase Playwright + Cucumber + Allure working together",
+    "elements": [
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;get-an-existing-post",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "GET an existing post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22246583
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJHRVQgYW4gZXhpc3RpbmcgcG9zdCJ9XX19",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send a GET request for post \"1\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188694749
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDExNDF9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6RWlMQW9nSUNKdFpYUm9iMlFpT2lBaVIwVlVJaXdLSUNBaWMzUmhkSFZ6SWpvZ01qQXdMQW9nSUNKd1lYbHNiMkZrSWpvZ2JuVnNiQXA5IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDExNDF9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6IiIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAxMTQyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKMWMyVnlTV1FpT2lBeExBb2dJQ0pwWkNJNklERXNDaUFnSW5ScGRHeGxJam9nSW5OMWJuUWdZWFYwSUdaaFkyVnlaU0J5WlhCbGJHeGhkQ0J3Y205MmFXUmxiblFnYjJOallXVmpZWFJwSUdWNFkyVndkSFZ5YVNCdmNIUnBieUJ5WlhCeVpXaGxibVJsY21sMElpd0tJQ0FpWW05a2VTSTZJQ0p4ZFdsaElHVjBJSE4xYzJOcGNHbDBYRzV6ZFhOamFYQnBkQ0J5WldOMWMyRnVaR0ZsSUdOdmJuTmxjWFYxYm5SMWNpQmxlSEJsWkdsMFlTQmxkQ0JqZFcxY2JuSmxjSEpsYUdWdVpHVnlhWFFnYlc5c1pYTjBhV0ZsSUhWMElIVjBJSEYxWVhNZ2RHOTBZVzFjYm01dmMzUnlkVzBnY21WeWRXMGdaWE4wSUdGMWRHVnRJSE4xYm5RZ2NtVnRJR1YyWlc1cFpYUWdZWEpqYUdsMFpXTjBieUlLZlE9PSIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAxMTQyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAxMTQyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the response body should have field \"id\" equal to 1",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the response body should have a non-empty field \"title\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1421749
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@get",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;post-creates-a-new-post",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "POST creates a new post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1056125
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJQT1NUIGNyZWF0ZXMgYSBuZXcgcG9zdCJ9XX19",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I have a new post payload",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I send a POST request to create the post",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 794281166
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAxIiwic3RhcnQiOjE3ODI5ODY2MDE5NDB9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSeklpd0tJQ0FpYldWMGFHOWtJam9nSWxCUFUxUWlMQW9nSUNKemRHRjBkWE1pT2lBeU1ERXNDaUFnSW5CaGVXeHZZV1FpT2lCN0NpQWdJQ0FpZEdsMGJHVWlPaUFpZEdobGMyRjFjblZ6SUhacGNuUjFjeUJrWld4bGJtbDBhU0lzQ2lBZ0lDQWlZbTlrZVNJNklDSkVaWEJ5YjIxdklITnZiVzUxY3lCd2NtOTJhV1JsYm5RdUlpd0tJQ0FnSUNKMWMyVnlTV1FpT2lBMUNpQWdmUXA5IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDE5NDF9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6ImV3b2dJQ0owYVhSc1pTSTZJQ0owYUdWellYVnlkWE1nZG1seWRIVnpJR1JsYkdWdWFYUnBJaXdLSUNBaVltOWtlU0k2SUNKRVpYQnliMjF2SUhOdmJXNTFjeUJ3Y205MmFXUmxiblF1SWl3S0lDQWlkWE5sY2tsa0lqb2dOUXA5IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDE5NDJ9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKMGFYUnNaU0k2SUNKMGFHVnpZWFZ5ZFhNZ2RtbHlkSFZ6SUdSbGJHVnVhWFJwSWl3S0lDQWlZbTlrZVNJNklDSkVaWEJ5YjIxdklITnZiVzUxY3lCd2NtOTJhV1JsYm5RdUlpd0tJQ0FpZFhObGNrbGtJam9nTlN3S0lDQWlhV1FpT2lBeE1ERUtmUT09IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDE5NDJ9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAxOTQyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response body should echo the sent \"title\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the response body should have a non-empty field \"id\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66250
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1426832
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@post",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;put-updates-an-existing-post",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "PUT updates an existing post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1616042
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJQVVQgdXBkYXRlcyBhbiBleGlzdGluZyBwb3N0In1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I have an updated payload for post \"1\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 747083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I send a PUT request to update the post",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 303233042
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDIyNTB9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6RWlMQW9nSUNKdFpYUm9iMlFpT2lBaVVGVlVJaXdLSUNBaWMzUmhkSFZ6SWpvZ01qQXdMQW9nSUNKd1lYbHNiMkZrSWpvZ2V3b2dJQ0FnSW1sa0lqb2dNU3dLSUNBZ0lDSjBhWFJzWlNJNklDSmhZbk5sYm5NZ1lXUm1hV05wYnlCMGFHVnliV0ZsSUdSbFpIVmpieUlzQ2lBZ0lDQWlZbTlrZVNJNklDSkNiMjUxY3lCMWRISjFiU0IxYm1ScGNYVmxJR04xY25KcFkzVnNkVzBnWTNWeWNtbGpkV3gxYlNCamIyNTBkWEppYnlCaGNIQnZjMmwwZFhNZ1kyOXRaV1J2SUhSbGJtRjRMaUlzQ2lBZ0lDQWlkWE5sY2tsa0lqb2dPQW9nSUgwS2ZRPT0iLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMjI1MH19",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6ImV3b2dJQ0pwWkNJNklERXNDaUFnSW5ScGRHeGxJam9nSW1GaWMyVnVjeUJoWkdacFkybHZJSFJvWlhKdFlXVWdaR1ZrZFdOdklpd0tJQ0FpWW05a2VTSTZJQ0pDYjI1MWN5QjFkSEoxYlNCMWJtUnBjWFZsSUdOMWNuSnBZM1ZzZFcwZ1kzVnljbWxqZFd4MWJTQmpiMjUwZFhKaWJ5QmhjSEJ2YzJsMGRYTWdZMjl0WldSdklIUmxibUY0TGlJc0NpQWdJblZ6WlhKSlpDSTZJRGdLZlE9PSIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyMjUxfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKcFpDSTZJREVzQ2lBZ0luUnBkR3hsSWpvZ0ltRmljMlZ1Y3lCaFpHWnBZMmx2SUhSb1pYSnRZV1VnWkdWa2RXTnZJaXdLSUNBaVltOWtlU0k2SUNKQ2IyNTFjeUIxZEhKMWJTQjFibVJwY1hWbElHTjFjbkpwWTNWc2RXMGdZM1Z5Y21samRXeDFiU0JqYjI1MGRYSmlieUJoY0hCdmMybDBkWE1nWTI5dFpXUnZJSFJsYm1GNExpSXNDaUFnSW5WelpYSkpaQ0k2SURnS2ZRPT0iLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMjI1Mn19",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAyMjUyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the response body should echo the sent \"title\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the response body should have field \"id\" equal to 1",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6930665
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@put",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;delete-removes-a-post",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "DELETE removes a post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1407624
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJERUxFVEUgcmVtb3ZlcyBhIHBvc3QifV19fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I send a DELETE request for post \"1\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 280621375
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDI1NDN9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6RWlMQW9nSUNKdFpYUm9iMlFpT2lBaVJFVk1SVlJGSWl3S0lDQWljM1JoZEhWeklqb2dNakF3TEFvZ0lDSndZWGxzYjJGa0lqb2diblZzYkFwOSIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNTQ0fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6IiIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNTQ0fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJlMzA9IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDI1NDR9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAyNTQ1fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82625
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1028624
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@delete",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;get-multiple-posts-by-id",
+        "keyword": "Scenario Outline",
+        "line": 43,
+        "name": "GET multiple posts by id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 826125
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJHRVQgbXVsdGlwbGUgcG9zdHMgYnkgaWQifV19fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I send a GET request for post \"2\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57657542
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDI2MDV9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6SWlMQW9nSUNKdFpYUm9iMlFpT2lBaVIwVlVJaXdLSUNBaWMzUmhkSFZ6SWpvZ01qQXdMQW9nSUNKd1lYbHNiMkZrSWpvZ2JuVnNiQXA5IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDI2MDV9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6IiIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNjA2fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKMWMyVnlTV1FpT2lBeExBb2dJQ0pwWkNJNklESXNDaUFnSW5ScGRHeGxJam9nSW5GMWFTQmxjM1FnWlhOelpTSXNDaUFnSW1KdlpIa2lPaUFpWlhOMElISmxjblZ0SUhSbGJYQnZjbVVnZG1sMFlXVmNibk5sY1hWcElITnBiblFnYm1sb2FXd2djbVZ3Y21Wb1pXNWtaWEpwZENCa2IyeHZjaUJpWldGMFlXVWdaV0VnWkc5c2IzSmxjeUJ1WlhGMVpWeHVablZuYVdGMElHSnNZVzVrYVhScGFYTWdkbTlzZFhCMFlYUmxJSEJ2Y25KdklIWmxiQ0J1YVdocGJDQnRiMnhsYzNScFlXVWdkWFFnY21WcFkybGxibVJwYzF4dWNYVnBJR0Z3WlhKcFlXMGdibTl1SUdSbFltbDBhWE1nY0c5emMybHRkWE1nY1hWcElHNWxjWFZsSUc1cGMya2diblZzYkdFaUNuMD0iLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMjYwNn19",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAyNjA2fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the response body should have field \"id\" equal to 2",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 986000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@get",
+            "line": 35
+          },
+          {
+            "name": "@data-driven",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;get-multiple-posts-by-id",
+        "keyword": "Scenario Outline",
+        "line": 44,
+        "name": "GET multiple posts by id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 931833
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJHRVQgbXVsdGlwbGUgcG9zdHMgYnkgaWQifV19fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I send a GET request for post \"5\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68261624
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDI2Nzh9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6VWlMQW9nSUNKdFpYUm9iMlFpT2lBaVIwVlVJaXdLSUNBaWMzUmhkSFZ6SWpvZ01qQXdMQW9nSUNKd1lYbHNiMkZrSWpvZ2JuVnNiQXA5IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDI2Nzh9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6IiIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNjc4fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKMWMyVnlTV1FpT2lBeExBb2dJQ0pwWkNJNklEVXNDaUFnSW5ScGRHeGxJam9nSW01bGMyTnBkVzUwSUhGMVlYTWdiMlJwYnlJc0NpQWdJbUp2WkhraU9pQWljbVZ3ZFdScFlXNWtZV1VnZG1WdWFXRnRJSEYxWVdWeVlYUWdjM1Z1ZENCelpXUmNibUZzYVdGeklHRjFkQ0JtZFdkcFlYUWdjMmwwSUdGMWRHVnRJSE5sWkNCbGMzUmNiblp2YkhWd2RHRjBaVzBnYjIxdWFYTWdjRzl6YzJsdGRYTWdaWE56WlNCMmIyeDFjSFJoZEdsaWRYTWdjWFZwYzF4dVpYTjBJR0YxZENCMFpXNWxkSFZ5SUdSdmJHOXlJRzVsY1hWbElncDkiLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMjY3OH19",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAyNjc4fX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the response body should have field \"id\" equal to 5",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 756624
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@get",
+            "line": 35
+          },
+          {
+            "name": "@data-driven",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "posts-crud-against-the-jsonplaceholder-dummy-api;get-multiple-posts-by-id",
+        "keyword": "Scenario Outline",
+        "line": 45,
+        "name": "GET multiple posts by id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 745208
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJHRVQgbXVsdGlwbGUgcG9zdHMgYnkgaWQifV19fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16040
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I send a GET request for post \"10\"",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59072458
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgMjAwIiwic3RhcnQiOjE3ODI5ODY2MDI3NDB9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXFjMjl1Y0d4aFkyVm9iMnhrWlhJdWRIbHdhV052WkdVdVkyOXRMM0J2YzNSekx6RXdJaXdLSUNBaWJXVjBhRzlrSWpvZ0lrZEZWQ0lzQ2lBZ0luTjBZWFIxY3lJNklESXdNQ3dLSUNBaWNHRjViRzloWkNJNklHNTFiR3dLZlE9PSIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNzQwfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6IiIsImVuY29kaW5nIjoiYmFzZTY0IiwiY29udGVudFR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwid3JhcEluU3RlcCI6dHJ1ZSwidGltZXN0YW1wIjoxNzgyOTg2NjAyNzQwfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKMWMyVnlTV1FpT2lBeExBb2dJQ0pwWkNJNklERXdMQW9nSUNKMGFYUnNaU0k2SUNKdmNIUnBieUJ0YjJ4bGMzUnBZWE1nYVdRZ2NYVnBZU0JsZFcwaUxBb2dJQ0ppYjJSNUlqb2dJbkYxYnlCbGRDQmxlSEJsWkdsMFlTQnRiMlJwSUdOMWJTQnZabVpwWTJsaElIWmxiQ0J0WVdkdWFWeHVaRzlzYjNKcFluVnpJSEYxYVNCeVpYQjFaR2xoYm1SaFpWeHVkbVZ5YnlCdWFYTnBJSE5wZEZ4dWNYVnZjeUIyWlc1cFlXMGdjWFZ2WkNCelpXUWdZV05qZFhOaGJYVnpJSFpsY21sMFlYUnBjeUJsY25KdmNpSUtmUT09IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDI3NDF9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAyNzQxfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the response body should have field \"id\" equal to 10",
+            "match": {
+              "location": "features/step_definitions/postSteps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 797541
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@posts",
+            "line": 1
+          },
+          {
+            "name": "@get",
+            "line": 35
+          },
+          {
+            "name": "@data-driven",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "posts-crud-against-the-jsonplaceholder-dummy-api",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Posts CRUD against the JSONPlaceholder dummy API",
+    "tags": [
+      {
+        "name": "@api",
+        "line": 1
+      },
+      {
+        "name": "@posts",
+        "line": 1
+      }
+    ],
+    "uri": "features/jsonplaceholder-crud.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-management;get-existing-user-details",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Get existing user details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 754750
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImVwaWMiLCJ2YWx1ZSI6IkFQSSBBdXRvbWF0aW9uIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6ImZlYXR1cmUiLCJ2YWx1ZSI6IkpTT05QbGFjZWhvbGRlciBDUlVEIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoibWV0YWRhdGEiLCJkYXRhIjp7ImxhYmVscyI6W3sibmFtZSI6InN0b3J5IiwidmFsdWUiOiJHZXQgZXhpc3RpbmcgdXNlciBkZXRhaWxzIn1dfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I have valid user data",
+            "match": {
+              "location": "features/step_definitions/steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 794791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "GET request is made to fetch the user details with the user ID \"2\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 427154291
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdGFydCIsImRhdGEiOnsibmFtZSI6IkNhcHR1cmUgcmVzcG9uc2UgNDAxIiwic3RhcnQiOjE3ODI5ODY2MDMxNzB9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1zdW1tYXJ5IiwiY29udGVudCI6ImV3b2dJQ0oxY213aU9pQWlhSFIwY0hNNkx5OXlaWEZ5WlhNdWFXNHZZWEJwTDNWelpYSnpMeklpTEFvZ0lDSnRaWFJvYjJRaU9pQWlSMFZVSWl3S0lDQWljM1JoZEhWeklqb2dOREF4TEFvZ0lDSndZWGxzYjJGa0lqb2dld29nSUNBZ0ltNWhiV1VpT2lBaVZHRnRhU0lzQ2lBZ0lDQWlhbTlpSWpvZ0lrNWhkR2x2Ym1Gc0lFbHVkR1Z5WVdOMGFXOXVjeUJVWldOb2JtbGphV0Z1SWdvZ0lIMEtmUT09IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDMxNzB9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVxdWVzdC1ib2R5IiwiY29udGVudCI6ImV3b2dJQ0p1WVcxbElqb2dJbFJoYldraUxBb2dJQ0pxYjJJaU9pQWlUbUYwYVc5dVlXd2dTVzUwWlhKaFkzUnBiMjV6SUZSbFkyaHVhV05wWVc0aUNuMD0iLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMzE3MX19",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoicmVzcG9uc2UtYm9keSIsImNvbnRlbnQiOiJld29nSUNKbGNuSnZjaUk2SUNKdGFYTnphVzVuWDJGd2FWOXJaWGtpTEFvZ0lDSnRaWE56WVdkbElqb2dJbFJvWlNCNExXRndhUzFyWlhrZ2FHVmhaR1Z5SUdseklISmxjWFZwY21Wa0lHWnZjaUIwYUdseklHVnVaSEJ2YVc1MExpSXNDaUFnSW1ocGJuUWlPaUFpUTNKbFlYUmxJR0VnWm5KbFpTQnJaWGtnWVhRZ1lYQndMbkpsY1hKbGN5NXBiaUJoYm1RZ2MyVnVaQ0JwZENCaGN5QjRMV0Z3YVMxclpYa3VJaXdLSUNBaWJtVjRkRjl6ZEdWd2N5STZJRnNLSUNBZ0lDSkhieUIwYnlCaGNIQXVjbVZ4Y21WekxtbHVMMkZ3YVMxclpYbHpJSFJ2SUdkbGRDQjViM1Z5SUd0bGVTSXNDaUFnSUNBaVFXUmtJR2hsWVdSbGNqb2dlQzFoY0drdGEyVjVPaUE4ZVc5MWNsOXJaWGsrSWl3S0lDQWdJQ0pHYjNJZ1lYQndJSFZ6WlhJZ1pXNWtjRzlwYm5SekxDQjFjMlVnUVhWMGFHOXlhWHBoZEdsdmJqb2dRbVZoY21WeUlEeHpaWE56YVc5dVgzUnZhMlZ1UGlCcGJuTjBaV0ZrSWdvZ0lGMHNDaUFnSW1SdlkzTmZkWEpzSWpvZ0ltaDBkSEJ6T2k4dllYQndMbkpsY1hKbGN5NXBiaTlrYjJOekkyRjFkR2hsYm5ScFkyRjBhVzl1SWl3S0lDQWlaWGhoYlhCc1pWOWpkWEpzSWpvZ0ltTjFjbXdnTFVnZ1hDSjRMV0Z3YVMxclpYazZJRmxQVlZKZlFWQkpYMHRGV1Z3aUlHaDBkSEJ6T2k4dllYQnBMbkpsY1hKbGN5NXBiaTloY0drdlkyOXNiR1ZqZEdsdmJuTWlMQW9nSUNKZmJXVjBZU0k2SUhzS0lDQWdJQ0p3YjNkbGNtVmtYMko1SWpvZ0lsSmxjVkpsY3lJc0NpQWdJQ0FpWkc5amMxOTFjbXdpT2lBaWFIUjBjSE02THk5aGNIQXVjbVZ4Y21WekxtbHVMMlJ2WTNWdFpXNTBZWFJwYjI0aUxBb2dJQ0FnSW5Wd1ozSmhaR1ZmZFhKc0lqb2dJbWgwZEhCek9pOHZZWEJ3TG5KbGNYSmxjeTVwYmk5MWNHZHlZV1JsSWl3S0lDQWdJQ0psZUdGdGNHeGxYM1Z5YkNJNklDSm9kSFJ3Y3pvdkwyRndjQzV5WlhGeVpYTXVhVzR2WlhoaGJYQnNaWE12Ym05MFpYTXRZWEJ3SWl3S0lDQWdJQ0oyWVhKcFlXNTBJam9nSW5ZeFgySWlMQW9nSUNBZ0ltMWxjM05oWjJVaU9pQWlUV2x6YzJsdVp5OXBiblpoYkdsa0lHdGxlUzRnUjNKaFlpQmhJR1p5WldVZ2EyVjVJSFJ2SUd0bFpYQWdjbVZ6Y0c5dWMyVnpJR052Ym5OcGMzUmxiblF1SWl3S0lDQWdJQ0pqZEdFaU9pQjdDaUFnSUNBZ0lDSnNZV0psYkNJNklDSkhaWFFnYzNSaGNuUmxaQ0lzQ2lBZ0lDQWdJQ0oxY213aU9pQWlhSFIwY0hNNkx5OWhjSEF1Y21WeGNtVnpMbWx1TDJGd2FTMXJaWGx6SWdvZ0lDQWdmU3dLSUNBZ0lDSmpiMjUwWlhoMElqb2dJbWx1ZG1Gc2FXUmZhMlY1SWdvZ0lIMEtmUT09IiwiZW5jb2RpbmciOiJiYXNlNjQiLCJjb250ZW50VHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJ3cmFwSW5TdGVwIjp0cnVlLCJ0aW1lc3RhbXAiOjE3ODI5ODY2MDMxNzF9fQ==",
+                "mime_type": "application/vnd.allure.message+json"
+              },
+              {
+                "data": "eyJ0eXBlIjoic3RlcF9zdG9wIiwiZGF0YSI6eyJzdGF0dXMiOiJwYXNzZWQiLCJzdG9wIjoxNzgyOTg2NjAzMTcyfX0=",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "features/step_definitions/steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 7055749,
+              "error_message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 401\n    at captureRawStack (/Users/arunmehra/Playwright_typescript_cucumber_framework/Playwright-typescript_cucumber-API-Automation/node_modules/playwright-core/lib/coreBundle.js:3172:17)\n    at callMatcherAsStep (/Users/arunmehra/Playwright_typescript_cucumber_framework/Playwright-typescript_cucumber-API-Automation/node_modules/playwright/lib/matchers/expect.js:12877:57)\n    at Object.toBe (/Users/arunmehra/Playwright_typescript_cucumber_framework/Playwright-typescript_cucumber-API-Automation/node_modules/playwright/lib/matchers/expect.js:12867:23)\n    at CustomWorld.<anonymous> (/Users/arunmehra/Playwright_typescript_cucumber_framework/Playwright-typescript_cucumber-API-Automation/features/step_definitions/steps.ts:24:34)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the response body should contain the user details \"Janet\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2349666
+            },
+            "embeddings": [
+              {
+                "data": "eyJ0eXBlIjoiYXR0YWNobWVudF9jb250ZW50IiwiZGF0YSI6eyJuYW1lIjoiZmFpbHVyZS1kZXRhaWxzIiwiY29udGVudCI6ImV3b2dJQ0psY25KdmNpSTZJQ0p0YVhOemFXNW5YMkZ3YVY5clpYa2lMQW9nSUNKdFpYTnpZV2RsSWpvZ0lsUm9aU0I0TFdGd2FTMXJaWGtnYUdWaFpHVnlJR2x6SUhKbGNYVnBjbVZrSUdadmNpQjBhR2x6SUdWdVpIQnZhVzUwTGlJc0NpQWdJbWhwYm5RaU9pQWlRM0psWVhSbElHRWdabkpsWlNCclpYa2dZWFFnWVhCd0xuSmxjWEpsY3k1cGJpQmhibVFnYzJWdVpDQnBkQ0JoY3lCNExXRndhUzFyWlhrdUlpd0tJQ0FpYm1WNGRGOXpkR1Z3Y3lJNklGc0tJQ0FnSUNKSGJ5QjBieUJoY0hBdWNtVnhjbVZ6TG1sdUwyRndhUzFyWlhseklIUnZJR2RsZENCNWIzVnlJR3RsZVNJc0NpQWdJQ0FpUVdSa0lHaGxZV1JsY2pvZ2VDMWhjR2t0YTJWNU9pQThlVzkxY2w5clpYaytJaXdLSUNBZ0lDSkdiM0lnWVhCd0lIVnpaWElnWlc1a2NHOXBiblJ6TENCMWMyVWdRWFYwYUc5eWFYcGhkR2x2YmpvZ1FtVmhjbVZ5SUR4elpYTnphVzl1WDNSdmEyVnVQaUJwYm5OMFpXRmtJZ29nSUYwc0NpQWdJbVJ2WTNOZmRYSnNJam9nSW1oMGRIQnpPaTh2WVhCd0xuSmxjWEpsY3k1cGJpOWtiMk56STJGMWRHaGxiblJwWTJGMGFXOXVJaXdLSUNBaVpYaGhiWEJzWlY5amRYSnNJam9nSW1OMWNtd2dMVWdnWENKNExXRndhUzFyWlhrNklGbFBWVkpmUVZCSlgwdEZXVndpSUdoMGRIQnpPaTh2WVhCcExuSmxjWEpsY3k1cGJpOWhjR2t2WTI5c2JHVmpkR2x2Ym5NaUxBb2dJQ0pmYldWMFlTSTZJSHNLSUNBZ0lDSndiM2RsY21Wa1gySjVJam9nSWxKbGNWSmxjeUlzQ2lBZ0lDQWlaRzlqYzE5MWNtd2lPaUFpYUhSMGNITTZMeTloY0hBdWNtVnhjbVZ6TG1sdUwyUnZZM1Z0Wlc1MFlYUnBiMjRpTEFvZ0lDQWdJblZ3WjNKaFpHVmZkWEpzSWpvZ0ltaDBkSEJ6T2k4dllYQndMbkpsY1hKbGN5NXBiaTkxY0dkeVlXUmxJaXdLSUNBZ0lDSmxlR0Z0Y0d4bFgzVnliQ0k2SUNKb2RIUndjem92TDJGd2NDNXlaWEZ5WlhNdWFXNHZaWGhoYlhCc1pYTXZibTkwWlhNdFlYQndJaXdLSUNBZ0lDSjJZWEpwWVc1MElqb2dJbll4WDJJaUxBb2dJQ0FnSW0xbGMzTmhaMlVpT2lBaVRXbHpjMmx1Wnk5cGJuWmhiR2xrSUd0bGVTNGdSM0poWWlCaElHWnlaV1VnYTJWNUlIUnZJR3RsWlhBZ2NtVnpjRzl1YzJWeklHTnZibk5wYzNSbGJuUXVJaXdLSUNBZ0lDSmpkR0VpT2lCN0NpQWdJQ0FnSUNKc1lXSmxiQ0k2SUNKSFpYUWdjM1JoY25SbFpDSXNDaUFnSUNBZ0lDSjFjbXdpT2lBaWFIUjBjSE02THk5aGNIQXVjbVZ4Y21WekxtbHVMMkZ3YVMxclpYbHpJZ29nSUNBZ2ZTd0tJQ0FnSUNKamIyNTBaWGgwSWpvZ0ltbHVkbUZzYVdSZmEyVjVJZ29nSUgwS2ZRPT0iLCJlbmNvZGluZyI6ImJhc2U2NCIsImNvbnRlbnRUeXBlIjoiYXBwbGljYXRpb24vanNvbiIsIndyYXBJblN0ZXAiOnRydWUsInRpbWVzdGFtcCI6MTc4Mjk4NjYwMzE4MX19",
+                "mime_type": "application/vnd.allure.message+json"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Management",
+    "tags": [],
+    "uri": "features/user.feature"
+  }
+]
