@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test:cucumber": "cucumber-js --config cucumber.js",
-    "allure:report": "allure generate allure-results -o allure-report --clean",
-    "allure:open": "allure open allure-report"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,7 +18,6 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
-    "@faker-js/faker": "^10.5.0",
     "dotenv": "^17.4.2"
   }
 }
