@@ -1,0 +1,9 @@
+{
+  "method": "POST",
+  "url": "https://reqres.in/api/users",
+  "headers": {},
+  "body": {
+    "name": "Eryn_1783579264292",
+    "job": "National Accounts Supervisor"
+  }
+}

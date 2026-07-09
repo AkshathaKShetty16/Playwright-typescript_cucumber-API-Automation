@@ -1,0 +1,3 @@
+auth,status
+missing,401
+invalid,403

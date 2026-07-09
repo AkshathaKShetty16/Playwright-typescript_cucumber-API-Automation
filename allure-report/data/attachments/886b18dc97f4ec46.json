@@ -1,0 +1,11 @@
+{
+  "method": "POST",
+  "url": "https://reqres.in/api/users",
+  "headers": {
+    "x-api-key": "123456789"
+  },
+  "body": {
+    "name": "Abel_1783579264494",
+    "job": "Principal Markets Planner"
+  }
+}

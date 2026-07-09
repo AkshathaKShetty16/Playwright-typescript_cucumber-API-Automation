@@ -1,0 +1,37 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","191","Delete an existing user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","259","Create a new user successfully","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","227","Update an existing user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","27","Get existing user details with different authentication","","2026-07-09","failed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","434","Create user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","190","Update an existing user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","179","Create user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","190","Update an existing user","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","181","Delete an existing user with different authentication","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","578","Get existing user details","","2026-07-09","passed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","22","Get existing user details with different authentication","","2026-07-09","failed","2026-07-09","","","",""
+"As a user of the application
+    I want to manage user accounts
+    So that I can get create, update, and delete users","181","Delete an existing user","","2026-07-09","passed","2026-07-09","","","",""

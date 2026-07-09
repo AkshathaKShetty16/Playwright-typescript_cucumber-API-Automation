@@ -1,0 +1,9 @@
+{
+  "method": "POST",
+  "url": "https://reqres.in/api/users",
+  "headers": {},
+  "body": {
+    "name": "Janis_1783579390194",
+    "job": "Dynamic Web Producer"
+  }
+}

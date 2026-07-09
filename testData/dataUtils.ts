@@ -1,15 +1,19 @@
 import { faker } from '@faker-js/faker';
 
 export const userData = {
-    createUser: () => ({
-        name: faker.person.firstName(),
-        job: faker.person.jobTitle(),
-    }),
 
-    updateUser: () => ({
-        name: faker.person.fullName(),
-        job: 'Senior SDET',
-    }),
-};
+    createUser() {
+        return {
+            name: `${faker.person.firstName()}_${Date.now()}`,
+            job: faker.person.jobTitle()
+        };
+    },
 
-export const dataUtils = userData;
+    updateUser() {
+        return {
+            name: `${faker.person.firstName()}_${Date.now()}`,
+            job: faker.person.jobTitle()
+        };
+    }
+
+}
