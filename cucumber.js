@@ -7,8 +7,9 @@ module.exports = {
     ],
     paths: ['features/**/*.feature'],
      format: [
-      "progress-bar",
-      "allure-cucumberjs/reporter"
+      'progress-bar',
+      'allure-cucumberjs/reporter',
+      'json:reports/cucumber-report.json'
     ]
   }
 };

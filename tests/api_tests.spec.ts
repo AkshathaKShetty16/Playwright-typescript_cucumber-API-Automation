@@ -1,7 +1,7 @@
 import { test, expect, APIResponse } from '@playwright/test';
 import dotenv from 'dotenv';
 import { header } from '../Utils/header';
-import { userData } from '../testData/dataUtils';
+import { userData } from '../testData/userData';
 import { ApiClient } from '../Utils/apiClient';
 import type { GetUser } from '../Models/getUser';
 import type { CreateUser } from '../Models/createUser';
