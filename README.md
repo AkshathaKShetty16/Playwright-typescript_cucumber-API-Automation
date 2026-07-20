@@ -1,0 +1,123 @@
+                                      API AUTOMATION FRAMEWORK
+                         (Playwright + Cucumber + TypeScript)
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              Business Layer                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  📄 user.feature                                                           │
+│  • Business scenarios written in Gherkin (Given / When / Then)             │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           Execution Layer                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  📂 step-definitions                                                       │
+│  • Maps Gherkin steps to TypeScript methods                                │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          Scenario Context Layer                            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  hooks.ts                                                                  │
+│     • Before/After scenario setup                                          │
+│     • Creates API Request Context                                          │
+│                                                                             │
+│  world.ts                                                                  │
+│     • Stores request, response & shared scenario data                       │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        API Execution Layer                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ apiExecutor.ts                                                             │
+│        │                                                                    │
+│        ├── Builds Request                                                  │
+│        ├── Calls API Client                                                │
+│        |                                         │
+│        ├── Logs Execution                                                  │
+│        └── Updates Allure Report                                           │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          Utility Layer                                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ apiClient.ts     → Sends HTTP requests                                     │
+│ headers.ts       → Reads headers/API key from .env                         │
+│ dataUtil.ts      → Generates dynamic test data using Faker                 │
+│ logger.ts        → Winston logging                                         │
+│ allureHelper.ts  → Request/Response attachments to Allure                  │
+│ helper.ts        → Common reusable utilities                               │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                     Configuration & Environment                            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ .env          → Base URL, API Keys                                         │
+│ cucumber.js   → Cucumber configuration                                     │
+│ package.json  → Project dependencies & scripts                             │
+└───────────────────────────────┬─────────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           Reports & Logs                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ logs/api.log                                                               │
+│ allure-results                                                             │
+│ allure-report                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                    API Automation Execution Flow
+
+      ┌───────────────┐
+      │ user.feature  │
+      │ Gherkin Steps │
+      └───────┬───────┘
+              │
+              ▼
+     ┌──────────────────┐
+     │ Step Definitions │
+     └───────┬──────────┘
+             │
+             ▼
+      ┌───────────────┐
+      │ hooks.ts      │
+      │ Create Context│
+      └───────┬───────┘
+              │
+              ▼
+      ┌───────────────┐
+      │ world.ts      │
+      │ Shared Data   │
+      └───────┬───────┘
+              │
+              ▼
+      ┌──────────────────────┐
+      │ apiExecutor.ts       │
+      │ Orchestrates Request │
+      └───────┬──────────────┘
+              │
+              ▼
+      ┌──────────────────────┐
+      │ apiClient.ts         │
+      │ Playwright API Call  │
+      └───────┬──────────────┘
+              │
+              ▼
+      ┌──────────────────────┐
+      │ API Response         │
+      └───────┬──────────────┘
+              │
+     ┌────────┼─────────┐
+     ▼        ▼         ▼
+logger.ts  allureHelper  world.ts
+Winston    Report        Store Response
+     │        │              │
+     └────────┴──────────────┘
+              │
+              ▼
+      Allure Report + API Logs
