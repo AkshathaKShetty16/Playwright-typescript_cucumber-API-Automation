@@ -1,0 +1,9 @@
+{
+  "method": "PUT",
+  "url": "https://reqres.in/api/users/2",
+  "headers": {},
+  "body": {
+    "name": "Trinity_1783579748189",
+    "job": "Corporate Usability Engineer"
+  }
+}

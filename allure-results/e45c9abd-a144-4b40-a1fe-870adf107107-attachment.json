@@ -1,0 +1,11 @@
+{
+  "method": "PUT",
+  "url": "https://reqres.in/api/users/2",
+  "headers": {
+    "x-api-key": "pro_fafa16755c89ee2288ecc99d4e600a0f23efea710fa020d402c43c0d1ae77777"
+  },
+  "body": {
+    "name": "Edgar_1783579390559",
+    "job": "Corporate Brand Planner"
+  }
+}

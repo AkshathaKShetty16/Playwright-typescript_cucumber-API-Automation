@@ -5,9 +5,11 @@ module.exports = {
       'features/step_definitions/**/*.ts',
       'features/support/**/*.ts'
     ],
-    paths: [
-      'features/**/*.feature'
-    ],
-    publishQuiet: true
+    paths: ['features/**/*.feature'],
+     format: [
+      'progress-bar',
+      'allure-cucumberjs/reporter',
+      'json:reports/cucumber-report.json'
+    ]
   }
 };

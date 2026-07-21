@@ -1,0 +1,11 @@
+{
+  "method": "POST",
+  "url": "https://reqres.in/api/users",
+  "headers": {
+    "x-api-key": "pro_fafa16755c89ee2288ecc99d4e600a0f23efea710fa020d402c43c0d1ae77777"
+  },
+  "body": {
+    "name": "Joe_1783579872533",
+    "job": "Future Operations Coordinator"
+  }
+}

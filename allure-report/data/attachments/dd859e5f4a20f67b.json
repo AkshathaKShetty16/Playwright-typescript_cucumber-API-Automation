@@ -1,0 +1,11 @@
+{
+  "method": "POST",
+  "url": "https://reqres.in/api/users",
+  "headers": {
+    "x-api-key": "123456789"
+  },
+  "body": {
+    "name": "Jabari_1783579390374",
+    "job": "Chief Functionality Associate"
+  }
+}

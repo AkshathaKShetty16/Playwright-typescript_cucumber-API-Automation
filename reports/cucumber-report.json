@@ -1,0 +1,1195 @@
+[
+  {
+    "description": "    As a user of the application\n    I want to manage user accounts\n    So that I can get create, update, and delete users",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-management;get-existing-user-details",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Get existing user details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25473875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "a GET request is made to fetch the user details",
+            "match": {
+              "location": "features/step_definitions/steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 519184790
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiR0VUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAicHJvX2ZhZmExNjc1NWM4OWVlMjI4OGVjYzk5ZDRlNjAwYTBmMjNlZmVhNzEwZmEwMjBkNDAyYzQzYzBkMWFlNzc3NzciCiAgfSwKICAiYm9keSI6IG51bGwKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDA=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJkYXRhIjogewogICAgImlkIjogMiwKICAgICJlbWFpbCI6ICJqYW5ldC53ZWF2ZXJAcmVxcmVzLmluIiwKICAgICJmaXJzdF9uYW1lIjogIkphbmV0IiwKICAgICJsYXN0X25hbWUiOiAiV2VhdmVyIiwKICAgICJhdmF0YXIiOiAiaHR0cHM6Ly9yZXFyZXMuaW4vaW1nL2ZhY2VzLzItaW1hZ2UuanBnIgogIH0sCiAgInN1cHBvcnQiOiB7CiAgICAidXJsIjogImh0dHBzOi8vYmVuaG93ZGxlLmltL2ZpcnN0LWN0by1wbGF5Ym9vaz91dG1fc291cmNlPXJlcXJlcyZ1dG1fbWVkaXVtPWpzb24mdXRtX2NhbXBhaWduPXJlZmVycmFsIiwKICAgICJ0ZXh0IjogIkJlY29tZSBhIGJldHRlciBDVE8uIEEgcGxheWJvb2sgb2YgcGFpbmZ1bCBzdG9yaWVzIGFuZCBwcmFjdGljYWwgYWR2aWNlIGZyb20gYSB0d28tdGltZSBzdGFydHVwIENUTy4iCiAgfSwKICAiX21ldGEiOiB7CiAgICAicG93ZXJlZF9ieSI6ICJSZXFSZXMiLAogICAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2N1bWVudGF0aW9uIiwKICAgICJ1cGdyYWRlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vdXBncmFkZSIsCiAgICAiZXhhbXBsZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2V4YW1wbGVzL25vdGVzLWFwcCIsCiAgICAidmFyaWFudCI6ICJ2MV9iIiwKICAgICJtZXNzYWdlIjogIlRoaXMgaXMgYSByZWFkLW9ubHkgZGVtbyBlbmRwb2ludC4gU2lnbiB1cCB0byBjcmVhdGUgeW91ciBvd24gY29sbGVjdGlvbnMgd2l0aCBmdWxsIENSVUQgYW5kIGF1dGguIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiCiAgICB9LAogICAgImNvbnRleHQiOiAibGVnYWN5X3N1Y2Nlc3MiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3518166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response body should contain the user details \"Janet\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1249958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1620791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          },
+          {
+            "name": "@sanity",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;get-existing-user-details-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Get existing user details with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 992124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the request authentication is \"missing\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "a GET request is made to fetch the user details",
+            "match": {
+              "location": "features/step_definitions/steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24611083
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiR0VUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHt9LAogICJib2R5IjogbnVsbAp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDA=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJkYXRhIjogewogICAgImlkIjogMiwKICAgICJlbWFpbCI6ICJqYW5ldC53ZWF2ZXJAcmVxcmVzLmluIiwKICAgICJmaXJzdF9uYW1lIjogIkphbmV0IiwKICAgICJsYXN0X25hbWUiOiAiV2VhdmVyIiwKICAgICJhdmF0YXIiOiAiaHR0cHM6Ly9yZXFyZXMuaW4vaW1nL2ZhY2VzLzItaW1hZ2UuanBnIgogIH0sCiAgInN1cHBvcnQiOiB7CiAgICAidXJsIjogImh0dHBzOi8vYmVuaG93ZGxlLmltL2ZpcnN0LWN0by1wbGF5Ym9vaz91dG1fc291cmNlPXJlcXJlcyZ1dG1fbWVkaXVtPWpzb24mdXRtX2NhbXBhaWduPXJlZmVycmFsIiwKICAgICJ0ZXh0IjogIkJlY29tZSBhIGJldHRlciBDVE8uIEEgcGxheWJvb2sgb2YgcGFpbmZ1bCBzdG9yaWVzIGFuZCBwcmFjdGljYWwgYWR2aWNlIGZyb20gYSB0d28tdGltZSBzdGFydHVwIENUTy4iCiAgfSwKICAiX21ldGEiOiB7CiAgICAicG93ZXJlZF9ieSI6ICJSZXFSZXMiLAogICAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2N1bWVudGF0aW9uIiwKICAgICJ1cGdyYWRlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vdXBncmFkZSIsCiAgICAiZXhhbXBsZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2V4YW1wbGVzL25vdGVzLWFwcCIsCiAgICAidmFyaWFudCI6ICJ2MV9iIiwKICAgICJtZXNzYWdlIjogIlRoaXMgaXMgYSByZWFkLW9ubHkgZGVtbyBlbmRwb2ludC4gU2lnbiB1cCB0byBjcmVhdGUgeW91ciBvd24gY29sbGVjdGlvbnMgd2l0aCBmdWxsIENSVUQgYW5kIGF1dGguIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiCiAgICB9LAogICAgImNvbnRleHQiOiAibGVnYWN5X3N1Y2Nlc3MiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the response status code should be 401",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1913084,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at captureRawStack (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright-core/lib/coreBundle.js:3172:17)\n    at callMatcherAsStep (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright/lib/matchers/expect.js:12877:57)\n    at Object.toBe (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright/lib/matchers/expect.js:12867:23)\n    at AllureCucumberWorld.<anonymous> (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/features/step_definitions/steps.ts:57:34)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 713917
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;get-existing-user-details-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Get existing user details with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 796458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the request authentication is \"invalid\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "a GET request is made to fetch the user details",
+            "match": {
+              "location": "features/step_definitions/steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24653291
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiR0VUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAiMTIzNDU2Nzg5IgogIH0sCiAgImJvZHkiOiBudWxsCn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDA=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJkYXRhIjogewogICAgImlkIjogMiwKICAgICJlbWFpbCI6ICJqYW5ldC53ZWF2ZXJAcmVxcmVzLmluIiwKICAgICJmaXJzdF9uYW1lIjogIkphbmV0IiwKICAgICJsYXN0X25hbWUiOiAiV2VhdmVyIiwKICAgICJhdmF0YXIiOiAiaHR0cHM6Ly9yZXFyZXMuaW4vaW1nL2ZhY2VzLzItaW1hZ2UuanBnIgogIH0sCiAgInN1cHBvcnQiOiB7CiAgICAidXJsIjogImh0dHBzOi8vYmVuaG93ZGxlLmltL2ZpcnN0LWN0by1wbGF5Ym9vaz91dG1fc291cmNlPXJlcXJlcyZ1dG1fbWVkaXVtPWpzb24mdXRtX2NhbXBhaWduPXJlZmVycmFsIiwKICAgICJ0ZXh0IjogIkJlY29tZSBhIGJldHRlciBDVE8uIEEgcGxheWJvb2sgb2YgcGFpbmZ1bCBzdG9yaWVzIGFuZCBwcmFjdGljYWwgYWR2aWNlIGZyb20gYSB0d28tdGltZSBzdGFydHVwIENUTy4iCiAgfSwKICAiX21ldGEiOiB7CiAgICAicG93ZXJlZF9ieSI6ICJSZXFSZXMiLAogICAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2N1bWVudGF0aW9uIiwKICAgICJ1cGdyYWRlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vdXBncmFkZSIsCiAgICAiZXhhbXBsZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2V4YW1wbGVzL25vdGVzLWFwcCIsCiAgICAidmFyaWFudCI6ICJ2MV9iIiwKICAgICJtZXNzYWdlIjogIlRoaXMgaXMgYSByZWFkLW9ubHkgZGVtbyBlbmRwb2ludC4gU2lnbiB1cCB0byBjcmVhdGUgeW91ciBvd24gY29sbGVjdGlvbnMgd2l0aCBmdWxsIENSVUQgYW5kIGF1dGguIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiCiAgICB9LAogICAgImNvbnRleHQiOiAibGVnYWN5X3N1Y2Nlc3MiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the response status code should be 403",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 516250,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at captureRawStack (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright-core/lib/coreBundle.js:3172:17)\n    at callMatcherAsStep (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright/lib/matchers/expect.js:12877:57)\n    at Object.toBe (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/node_modules/playwright/lib/matchers/expect.js:12867:23)\n    at AllureCucumberWorld.<anonymous> (/Users/akshatha/Documents/PLAYWRIGHT/PlayWrightAPIAutomation/features/step_definitions/steps.ts:57:34)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 630499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;create-a-new-user-successfully",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Create a new user successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 655874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the user has the create user payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 884625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "POST request is made to create the user with endpoint \"/users\" with payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172082749
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgInVybCI6ICJodHRwczovL3JlcXJlcy5pbi9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjogewogICAgIngtYXBpLWtleSI6ICJwcm9fZmFmYTE2NzU1Yzg5ZWUyMjg4ZWNjOTlkNGU2MDBhMGYyM2VmZWE3MTBmYTAyMGQ0MDJjNDNjMGQxYWU3Nzc3NyIKICB9LAogICJib2R5IjogewogICAgIm5hbWUiOiAiQ2Fyb2xpbmFfMTc4NDU2OTQ3NDMyNiIsCiAgICAiam9iIjogIlNlbmlvciBQYXJhZGlnbSBBZ2VudCIKICB9Cn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDE=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJuYW1lIjogIkNhcm9saW5hXzE3ODQ1Njk0NzQzMjYiLAogICJqb2IiOiAiU2VuaW9yIFBhcmFkaWdtIEFnZW50IiwKICAiaWQiOiAiODg5IiwKICAiY3JlYXRlZEF0IjogIjIwMjYtMDctMjBUMTc6NDQ6MzQuNDYzWiIsCiAgIl9tZXRhIjogewogICAgInBvd2VyZWRfYnkiOiAiUmVxUmVzIiwKICAgICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jdW1lbnRhdGlvbiIsCiAgICAidXBncmFkZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiLAogICAgImV4YW1wbGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9leGFtcGxlcy9ub3Rlcy1hcHAiLAogICAgInZhcmlhbnQiOiAidjFfYiIsCiAgICAibWVzc2FnZSI6ICJUaGlzIGlzIGEgcmVhZC1vbmx5IGRlbW8gZW5kcG9pbnQuIFNpZ24gdXAgdG8gY3JlYXRlIHlvdXIgb3duIGNvbGxlY3Rpb25zIHdpdGggZnVsbCBDUlVEIGFuZCBhdXRoLiIsCiAgICAiY3RhIjogewogICAgICAibGFiZWwiOiAiR2V0IHN0YXJ0ZWQiLAogICAgICAidXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi91cGdyYWRlIgogICAgfSwKICAgICJjb250ZXh0IjogImxlZ2FjeV9zdWNjZXNzIgogIH0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the response status code should be 201",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1003959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "the response should contain the created user details",
+            "match": {
+              "location": "features/step_definitions/steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2410999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1823624
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;create-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 46,
+        "name": "Create user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2002207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "the user has the create user payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 316166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the request authentication is \"missing\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "POST request is made to create the user with endpoint \"/users\" with payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218643833
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgInVybCI6ICJodHRwczovL3JlcXJlcy5pbi9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAibmFtZSI6ICJNaW5uaWVfMTc4NDU2OTQ3NDUxMiIsCiAgICAiam9iIjogIkludmVzdG9yIFRhY3RpY3MgQXNzb2NpYXRlIgogIH0KfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDE=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJtaXNzaW5nX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoZSB4LWFwaS1rZXkgaGVhZGVyIGlzIHJlcXVpcmVkIGZvciB0aGlzIGVuZHBvaW50LiIsCiAgImhpbnQiOiAiQ3JlYXRlIGEgZnJlZSBrZXkgYXQgYXBwLnJlcXJlcy5pbiBhbmQgc2VuZCBpdCBhcyB4LWFwaS1rZXkuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJHbyB0byBhcHAucmVxcmVzLmluL2FwaS1rZXlzIHRvIGdldCB5b3VyIGtleSIsCiAgICAiQWRkIGhlYWRlcjogeC1hcGkta2V5OiA8eW91cl9rZXk+IiwKICAgICJGb3IgYXBwIHVzZXIgZW5kcG9pbnRzLCB1c2UgQXV0aG9yaXphdGlvbjogQmVhcmVyIDxzZXNzaW9uX3Rva2VuPiBpbnN0ZWFkIgogIF0sCiAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2NzI2F1dGhlbnRpY2F0aW9uIiwKICAiZXhhbXBsZV9jdXJsIjogImN1cmwgLUggXCJ4LWFwaS1rZXk6IFlPVVJfQVBJX0tFWVwiIGh0dHBzOi8vYXBpLnJlcXJlcy5pbi9hcGkvY29sbGVjdGlvbnMiLAogICJfbWV0YSI6IHsKICAgICJwb3dlcmVkX2J5IjogIlJlcVJlcyIsCiAgICAiZG9jc191cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2RvY3VtZW50YXRpb24iLAogICAgInVwZ3JhZGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi91cGdyYWRlIiwKICAgICJleGFtcGxlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZXhhbXBsZXMvbm90ZXMtYXBwIiwKICAgICJ2YXJpYW50IjogInYxX2IiLAogICAgIm1lc3NhZ2UiOiAiTWlzc2luZy9pbnZhbGlkIGtleS4gR3JhYiBhIGZyZWUga2V5IHRvIGtlZXAgcmVzcG9uc2VzIGNvbnNpc3RlbnQuIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2FwaS1rZXlzIgogICAgfSwKICAgICJjb250ZXh0IjogImludmFsaWRfa2V5IgogIH0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "the response status code should be 401",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 975957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1321082
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;create-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 47,
+        "name": "Create user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3945582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "the user has the create user payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the request authentication is \"invalid\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "POST request is made to create the user with endpoint \"/users\" with payload",
+            "match": {
+              "location": "features/step_definitions/steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179611916
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgInVybCI6ICJodHRwczovL3JlcXJlcy5pbi9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjogewogICAgIngtYXBpLWtleSI6ICIxMjM0NTY3ODkiCiAgfSwKICAiYm9keSI6IHsKICAgICJuYW1lIjogIlZhbmVzc2FfMTc4NDU2OTQ3NDc0MyIsCiAgICAiam9iIjogIkZ1dHVyZSBHcm91cCBDb29yZGluYXRvciIKICB9Cn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDM=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJpbnZhbGlkX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoaXMgQVBJIGtleSBpcyBub3QgcmVjb2duaXplZCBvciBoYXMgYmVlbiByZXZva2VkLiIsCiAgImhpbnQiOiAiQ2hlY2sgdGhhdCB5b3VyIEFQSSBrZXkgaXMgY29ycmVjdCBhbmQgbm90IGV4cGlyZWQuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJWZXJpZnkgdGhlIGtleSBpbiB5b3VyIGRhc2hib2FyZCBhdCBhcHAucmVxcmVzLmluL2FwaS1rZXlzIiwKICAgICJSZWdlbmVyYXRlIHRoZSBrZXkgaWYgbmVlZGVkIiwKICAgICJFbnN1cmUgeW91J3JlIHVzaW5nIHRoZSBjb3JyZWN0IGtleSB0eXBlIChtYW5hZ2UvcHVibGljKSIKICBdLAogICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jcyNhcGkta2V5cyIsCiAgIl9tZXRhIjogewogICAgInBvd2VyZWRfYnkiOiAiUmVxUmVzIiwKICAgICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jdW1lbnRhdGlvbiIsCiAgICAidXBncmFkZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiLAogICAgImV4YW1wbGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9leGFtcGxlcy9ub3Rlcy1hcHAiLAogICAgInZhcmlhbnQiOiAidjFfYiIsCiAgICAibWVzc2FnZSI6ICJNaXNzaW5nL2ludmFsaWQga2V5LiBHcmFiIGEgZnJlZSBrZXkgdG8ga2VlcCByZXNwb25zZXMgY29uc2lzdGVudC4iLAogICAgImN0YSI6IHsKICAgICAgImxhYmVsIjogIkdldCBzdGFydGVkIiwKICAgICAgInVybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vYXBpLWtleXMiCiAgICB9LAogICAgImNvbnRleHQiOiAiaW52YWxpZF9rZXkiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "the response status code should be 403",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1010832
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1225000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;update-an-existing-user",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Update an existing user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1497749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 130208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "PUT request is made to update the existing data",
+            "match": {
+              "location": "features/step_definitions/steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176748625
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUFVUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAicHJvX2ZhZmExNjc1NWM4OWVlMjI4OGVjYzk5ZDRlNjAwYTBmMjNlZmVhNzEwZmEwMjBkNDAyYzQzYzBkMWFlNzc3NzciCiAgfSwKICAiYm9keSI6IHsKICAgICJuYW1lIjogIkFsZWtfMTc4NDU2OTQ3NDkzMSIsCiAgICAiam9iIjogIkludGVybmFsIE9wZXJhdGlvbnMgT3JjaGVzdHJhdG9yIgogIH0KfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDA=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJuYW1lIjogIkFsZWtfMTc4NDU2OTQ3NDkzMSIsCiAgImpvYiI6ICJJbnRlcm5hbCBPcGVyYXRpb25zIE9yY2hlc3RyYXRvciIsCiAgInVwZGF0ZWRBdCI6ICIyMDI2LTA3LTIwVDE3OjQ0OjM1LjA3MloiLAogICJfbWV0YSI6IHsKICAgICJwb3dlcmVkX2J5IjogIlJlcVJlcyIsCiAgICAiZG9jc191cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2RvY3VtZW50YXRpb24iLAogICAgInVwZ3JhZGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi91cGdyYWRlIiwKICAgICJleGFtcGxlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZXhhbXBsZXMvbm90ZXMtYXBwIiwKICAgICJ2YXJpYW50IjogInYxX2IiLAogICAgIm1lc3NhZ2UiOiAiVGhpcyBpcyBhIHJlYWQtb25seSBkZW1vIGVuZHBvaW50LiBTaWduIHVwIHRvIGNyZWF0ZSB5b3VyIG93biBjb2xsZWN0aW9ucyB3aXRoIGZ1bGwgQ1JVRCBhbmQgYXV0aC4iLAogICAgImN0YSI6IHsKICAgICAgImxhYmVsIjogIkdldCBzdGFydGVkIiwKICAgICAgInVybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vdXBncmFkZSIKICAgIH0sCiAgICAiY29udGV4dCI6ICJsZWdhY3lfc3VjY2VzcyIKICB9Cn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "the response should contain the updated user data",
+            "match": {
+              "location": "features/step_definitions/steps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1157584
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 970125
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 49
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;update-an-existing-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 69,
+        "name": "Update an existing user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1473625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "the request authentication is \"missing\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "PUT request is made to update the existing data",
+            "match": {
+              "location": "features/step_definitions/steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170859667
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUFVUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHt9LAogICJib2R5IjogewogICAgIm5hbWUiOiAiRW1pZV8xNzg0NTY5NDc1MTE1IiwKICAgICJqb2IiOiAiQ29ycG9yYXRlIENvbmZpZ3VyYXRpb24gQW5hbHlzdCIKICB9Cn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDE=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJtaXNzaW5nX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoZSB4LWFwaS1rZXkgaGVhZGVyIGlzIHJlcXVpcmVkIGZvciB0aGlzIGVuZHBvaW50LiIsCiAgImhpbnQiOiAiQ3JlYXRlIGEgZnJlZSBrZXkgYXQgYXBwLnJlcXJlcy5pbiBhbmQgc2VuZCBpdCBhcyB4LWFwaS1rZXkuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJHbyB0byBhcHAucmVxcmVzLmluL2FwaS1rZXlzIHRvIGdldCB5b3VyIGtleSIsCiAgICAiQWRkIGhlYWRlcjogeC1hcGkta2V5OiA8eW91cl9rZXk+IiwKICAgICJGb3IgYXBwIHVzZXIgZW5kcG9pbnRzLCB1c2UgQXV0aG9yaXphdGlvbjogQmVhcmVyIDxzZXNzaW9uX3Rva2VuPiBpbnN0ZWFkIgogIF0sCiAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2NzI2F1dGhlbnRpY2F0aW9uIiwKICAiZXhhbXBsZV9jdXJsIjogImN1cmwgLUggXCJ4LWFwaS1rZXk6IFlPVVJfQVBJX0tFWVwiIGh0dHBzOi8vYXBpLnJlcXJlcy5pbi9hcGkvY29sbGVjdGlvbnMiLAogICJfbWV0YSI6IHsKICAgICJwb3dlcmVkX2J5IjogIlJlcVJlcyIsCiAgICAiZG9jc191cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2RvY3VtZW50YXRpb24iLAogICAgInVwZ3JhZGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi91cGdyYWRlIiwKICAgICJleGFtcGxlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZXhhbXBsZXMvbm90ZXMtYXBwIiwKICAgICJ2YXJpYW50IjogInYxX2IiLAogICAgIm1lc3NhZ2UiOiAiTWlzc2luZy9pbnZhbGlkIGtleS4gR3JhYiBhIGZyZWUga2V5IHRvIGtlZXAgcmVzcG9uc2VzIGNvbnNpc3RlbnQuIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2FwaS1rZXlzIgogICAgfSwKICAgICJjb250ZXh0IjogImludmFsaWRfa2V5IgogIH0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "the response status code should be 401",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 894084
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1066666
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;update-an-existing-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 70,
+        "name": "Update an existing user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3148625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "the request authentication is \"invalid\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "PUT request is made to update the existing data",
+            "match": {
+              "location": "features/step_definitions/steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178787000
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiUFVUIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAiMTIzNDU2Nzg5IgogIH0sCiAgImJvZHkiOiB7CiAgICAibmFtZSI6ICJEYXJyaW5fMTc4NDU2OTQ3NTI5NyIsCiAgICAiam9iIjogIk5hdGlvbmFsIENvbmZpZ3VyYXRpb24gQXNzaXN0YW50IgogIH0KfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDM=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJpbnZhbGlkX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoaXMgQVBJIGtleSBpcyBub3QgcmVjb2duaXplZCBvciBoYXMgYmVlbiByZXZva2VkLiIsCiAgImhpbnQiOiAiQ2hlY2sgdGhhdCB5b3VyIEFQSSBrZXkgaXMgY29ycmVjdCBhbmQgbm90IGV4cGlyZWQuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJWZXJpZnkgdGhlIGtleSBpbiB5b3VyIGRhc2hib2FyZCBhdCBhcHAucmVxcmVzLmluL2FwaS1rZXlzIiwKICAgICJSZWdlbmVyYXRlIHRoZSBrZXkgaWYgbmVlZGVkIiwKICAgICJFbnN1cmUgeW91J3JlIHVzaW5nIHRoZSBjb3JyZWN0IGtleSB0eXBlIChtYW5hZ2UvcHVibGljKSIKICBdLAogICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jcyNhcGkta2V5cyIsCiAgIl9tZXRhIjogewogICAgInBvd2VyZWRfYnkiOiAiUmVxUmVzIiwKICAgICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jdW1lbnRhdGlvbiIsCiAgICAidXBncmFkZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiLAogICAgImV4YW1wbGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9leGFtcGxlcy9ub3Rlcy1hcHAiLAogICAgInZhcmlhbnQiOiAidjFfYiIsCiAgICAibWVzc2FnZSI6ICJNaXNzaW5nL2ludmFsaWQga2V5LiBHcmFiIGEgZnJlZSBrZXkgdG8ga2VlcCByZXNwb25zZXMgY29uc2lzdGVudC4iLAogICAgImN0YSI6IHsKICAgICAgImxhYmVsIjogIkdldCBzdGFydGVkIiwKICAgICAgInVybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vYXBpLWtleXMiCiAgICB9LAogICAgImNvbnRleHQiOiAiaW52YWxpZF9rZXkiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "the response status code should be 403",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 908042
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1094082
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;delete-an-existing-user",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "Delete an existing user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2792458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 74,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "DELETE request is made to the user deletion endpoint",
+            "match": {
+              "location": "features/step_definitions/steps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171184667
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiREVMRVRFIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAicHJvX2ZhZmExNjc1NWM4OWVlMjI4OGVjYzk5ZDRlNjAwYTBmMjNlZmVhNzEwZmEwMjBkNDAyYzQzYzBkMWFlNzc3NzciCiAgfSwKICAiYm9keSI6IG51bGwKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiAyMDQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "bnVsbA==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "the response status code should be 204",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 544082
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 773999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;delete-an-existing-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 87,
+        "name": "Delete an existing user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1103375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 80,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "the request authentication is \"missing\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 82,
+            "name": "DELETE request is made to the user deletion endpoint",
+            "match": {
+              "location": "features/step_definitions/steps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165829666
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiREVMRVRFIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHt9LAogICJib2R5IjogbnVsbAp9",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDE=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJtaXNzaW5nX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoZSB4LWFwaS1rZXkgaGVhZGVyIGlzIHJlcXVpcmVkIGZvciB0aGlzIGVuZHBvaW50LiIsCiAgImhpbnQiOiAiQ3JlYXRlIGEgZnJlZSBrZXkgYXQgYXBwLnJlcXJlcy5pbiBhbmQgc2VuZCBpdCBhcyB4LWFwaS1rZXkuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJHbyB0byBhcHAucmVxcmVzLmluL2FwaS1rZXlzIHRvIGdldCB5b3VyIGtleSIsCiAgICAiQWRkIGhlYWRlcjogeC1hcGkta2V5OiA8eW91cl9rZXk+IiwKICAgICJGb3IgYXBwIHVzZXIgZW5kcG9pbnRzLCB1c2UgQXV0aG9yaXphdGlvbjogQmVhcmVyIDxzZXNzaW9uX3Rva2VuPiBpbnN0ZWFkIgogIF0sCiAgImRvY3NfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9kb2NzI2F1dGhlbnRpY2F0aW9uIiwKICAiZXhhbXBsZV9jdXJsIjogImN1cmwgLUggXCJ4LWFwaS1rZXk6IFlPVVJfQVBJX0tFWVwiIGh0dHBzOi8vYXBpLnJlcXJlcy5pbi9hcGkvY29sbGVjdGlvbnMiLAogICJfbWV0YSI6IHsKICAgICJwb3dlcmVkX2J5IjogIlJlcVJlcyIsCiAgICAiZG9jc191cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2RvY3VtZW50YXRpb24iLAogICAgInVwZ3JhZGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi91cGdyYWRlIiwKICAgICJleGFtcGxlX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZXhhbXBsZXMvbm90ZXMtYXBwIiwKICAgICJ2YXJpYW50IjogInYxX2IiLAogICAgIm1lc3NhZ2UiOiAiTWlzc2luZy9pbnZhbGlkIGtleS4gR3JhYiBhIGZyZWUga2V5IHRvIGtlZXAgcmVzcG9uc2VzIGNvbnNpc3RlbnQuIiwKICAgICJjdGEiOiB7CiAgICAgICJsYWJlbCI6ICJHZXQgc3RhcnRlZCIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL2FwaS1rZXlzIgogICAgfSwKICAgICJjb250ZXh0IjogImludmFsaWRfa2V5IgogIH0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "the response status code should be 401",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 871291
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1045375
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-management;delete-an-existing-user-with-different-authentication",
+        "keyword": "Scenario Outline",
+        "line": 88,
+        "name": "Delete an existing user with different authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2066291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 80,
+            "name": "the user ID \"users/2\" exists",
+            "match": {
+              "location": "features/step_definitions/steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "the request authentication is \"invalid\"",
+            "match": {
+              "location": "features/step_definitions/steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 82,
+            "name": "DELETE request is made to the user deletion endpoint",
+            "match": {
+              "location": "features/step_definitions/steps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181202166
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJtZXRob2QiOiAiREVMRVRFIiwKICAidXJsIjogImh0dHBzOi8vcmVxcmVzLmluL2FwaS91c2Vycy8yIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LWFwaS1rZXkiOiAiMTIzNDU2Nzg5IgogIH0sCiAgImJvZHkiOiBudWxsCn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "U3RhdHVzIENvZGUgOiA0MDM=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "ewogICJlcnJvciI6ICJpbnZhbGlkX2FwaV9rZXkiLAogICJtZXNzYWdlIjogIlRoaXMgQVBJIGtleSBpcyBub3QgcmVjb2duaXplZCBvciBoYXMgYmVlbiByZXZva2VkLiIsCiAgImhpbnQiOiAiQ2hlY2sgdGhhdCB5b3VyIEFQSSBrZXkgaXMgY29ycmVjdCBhbmQgbm90IGV4cGlyZWQuIiwKICAibmV4dF9zdGVwcyI6IFsKICAgICJWZXJpZnkgdGhlIGtleSBpbiB5b3VyIGRhc2hib2FyZCBhdCBhcHAucmVxcmVzLmluL2FwaS1rZXlzIiwKICAgICJSZWdlbmVyYXRlIHRoZSBrZXkgaWYgbmVlZGVkIiwKICAgICJFbnN1cmUgeW91J3JlIHVzaW5nIHRoZSBjb3JyZWN0IGtleSB0eXBlIChtYW5hZ2UvcHVibGljKSIKICBdLAogICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jcyNhcGkta2V5cyIsCiAgIl9tZXRhIjogewogICAgInBvd2VyZWRfYnkiOiAiUmVxUmVzIiwKICAgICJkb2NzX3VybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vZG9jdW1lbnRhdGlvbiIsCiAgICAidXBncmFkZV91cmwiOiAiaHR0cHM6Ly9hcHAucmVxcmVzLmluL3VwZ3JhZGUiLAogICAgImV4YW1wbGVfdXJsIjogImh0dHBzOi8vYXBwLnJlcXJlcy5pbi9leGFtcGxlcy9ub3Rlcy1hcHAiLAogICAgInZhcmlhbnQiOiAidjFfYiIsCiAgICAibWVzc2FnZSI6ICJNaXNzaW5nL2ludmFsaWQga2V5LiBHcmFiIGEgZnJlZSBrZXkgdG8ga2VlcCByZXNwb25zZXMgY29uc2lzdGVudC4iLAogICAgImN0YSI6IHsKICAgICAgImxhYmVsIjogIkdldCBzdGFydGVkIiwKICAgICAgInVybCI6ICJodHRwczovL2FwcC5yZXFyZXMuaW4vYXBpLWtleXMiCiAgICB9LAogICAgImNvbnRleHQiOiAiaW52YWxpZF9rZXkiCiAgfQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "the response status code should be 403",
+            "match": {
+              "location": "features/step_definitions/steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 865917
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18203791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User Management",
+    "tags": [
+      {
+        "name": "@user",
+        "line": 1
+      }
+    ],
+    "uri": "features/user.feature"
+  }
+]

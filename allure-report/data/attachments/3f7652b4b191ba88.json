@@ -1,0 +1,8 @@
+{
+  "method": "GET",
+  "url": "https://reqres.in/api/users/2",
+  "headers": {
+    "x-api-key": "123456789"
+  },
+  "body": null
+}
