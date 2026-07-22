@@ -22,8 +22,8 @@ Feature: User Management
 
         Examples:
             | auth    | status |
-            | missing | 200    |
-            | invalid | 200    |
+            | missing | 401    |
+            | invalid | 403    |
 
     @regression
     Scenario: Create a new user successfully
