@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:cucumber": "cucumber-js --config cucumber.js; ts-node Utils/generateReport.ts",
+    "allure:report": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report",
+    "report:html": "ts-node Utils/generateReport.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
