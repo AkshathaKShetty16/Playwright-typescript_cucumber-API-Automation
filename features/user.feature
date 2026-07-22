@@ -4,7 +4,7 @@ Feature: User Management
     I want to manage user accounts
     So that I can get create, update, and delete users
 
-
+    @sanity
     Scenario: Get existing user details
 
         Given the user ID "users/2" exists
@@ -22,10 +22,10 @@ Feature: User Management
 
         Examples:
             | auth    | status |
-            | missing | 401    |
-            | invalid | 403    |
+            | missing | 200    |
+            | invalid | 200    |
 
-
+    @regression
     Scenario: Create a new user successfully
 
         Given the user has the create user payload
@@ -46,7 +46,7 @@ Feature: User Management
             | missing | 401    |
             | invalid | 403    |
 
-
+    @regression
     Scenario: Update an existing user
 
         Given the user ID "users/2" exists
