@@ -5,7 +5,7 @@ import { CustomWorld } from '../support/world';
 import { userData } from '../../testData/dataUtils';
 import { AllureHelper } from "../../Utils/allurehelper";
 import { ApiExecutor } from "../../Utils/apiExecutor";
-import { header } from "../../Utils/header";
+import { getHeaders } from "../../Utils/header";
 
 
 
@@ -18,7 +18,7 @@ Given('the request authentication is {string}', async function (auth: string) {
   switch (auth.toLowerCase()) {
 
     case "valid":
-      this.headers = header;
+      this.headers = getHeaders();
       break;
 
     case "missing":

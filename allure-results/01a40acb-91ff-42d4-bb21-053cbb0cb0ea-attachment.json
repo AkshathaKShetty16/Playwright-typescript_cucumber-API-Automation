@@ -1,9 +1,0 @@
-{
-  "method": "PUT",
-  "url": "https://reqres.in/api/users/2",
-  "headers": {},
-  "body": {
-    "name": "Alan_1783579873230",
-    "job": "Human Brand Associate"
-  }
-}

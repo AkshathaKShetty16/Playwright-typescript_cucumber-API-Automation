@@ -1,9 +1,0 @@
-{
-  "method": "POST",
-  "url": "https://reqres.in/api/users",
-  "headers": {},
-  "body": {
-    "name": "Kelsie_1783579872890",
-    "job": "Product Communications Architect"
-  }
-}

@@ -17,6 +17,13 @@ pipeline {
     }
 
     parameters {
+
+    choice(
+        name: 'ENV',
+        choices: ['qa', 'preprod', 'prod'],
+        description: 'Select execution environment'
+    )
+
     string(
         name: 'TAGS',
         defaultValue: '',
@@ -26,15 +33,7 @@ pipeline {
 
     environment {
         CI = 'true'
-        // Read process.env.TEST_ENV in your config/world to pick the right base URL, users, etc.
-        //TEST_ENV = "${params.TEST_ENV}"
-
-        // Or expose the base URL directly if your framework reads it:
-        // BASE_URL = "https://${params.TEST_ENV}-api.yourdomain.com"
-
-        // Secrets: store in Jenkins credentials (Manage Jenkins → Credentials), never in the repo.
-        // This exposes API_TOKEN (and API_TOKEN_USR / API_TOKEN_PSW for user-pass credentials):
-        // API_TOKEN = credentials('api-token-qa')
+        
     }
 
     stages {
@@ -50,19 +49,34 @@ pipeline {
             }
         }
 
+        stage('Execution Details') {
+    steps {
+        echo "Environment : ${params.ENV}"
+        echo "Tags        : ${params.TAGS ?: 'ALL'}"
+    }
+}
+
         // Note: no `npx playwright install` stage — Playwright's APIRequestContext
         // makes HTTP calls directly and does not need browser binaries.
 
         stage('Run API tests') {
             steps {
-                // Clear stale results so the report reflects only this run
-                sh 'rm -rf allure-results allure-report'
-                script {
-                    def tagsArg = params.TAGS?.trim() ? "--tags '${params.TAGS}'" : ''
-                    // Swap for your npm script if you prefer, e.g. sh "npm test -- ${tagsArg}"
-                    sh 'npm run test:cucumber'
-                }
-            }
+        sh 'rm -rf allure-results allure-report reports'
+
+        script {
+
+            currentBuild.displayName =
+                "#${env.BUILD_NUMBER} | ${params.ENV.toUpperCase()}"
+
+            def tagsArg = params.TAGS?.trim() ? "--tags '${params.TAGS}'" : ''
+
+            echo "Running on ${params.ENV} with tags: ${params.TAGS ?: 'ALL'}"
+
+            sh """
+                ENV=${params.ENV} npm run test:cucumber -- ${tagsArg}
+            """
+        }
+       }
         }
     }
 

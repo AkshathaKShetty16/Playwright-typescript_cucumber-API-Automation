@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:cucumber": "cucumber-js --config cucumber.js; ts-node Utils/generateReport.ts",
+   "test:cucumber": "cucumber-js --config cucumber.js",
+    "report:html": "ts-node Utils/generateReport.ts",
     "allure:report": "allure generate allure-results -o allure-report --clean",
-    "allure:open": "allure open allure-report",
-    "report:html": "ts-node Utils/generateReport.ts"
+    "allure:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "",

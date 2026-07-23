@@ -1,7 +1,7 @@
 import { ApiClient } from "./apiClient";
 import { AllureHelper } from "./allurehelper";
 import { logger } from "./logger";
-import { header } from "./header";
+import { getHeaders } from "./header";
 
 export class ApiExecutor {
 
@@ -11,19 +11,19 @@ export class ApiExecutor {
         endpoint: string,
         requestBody?: any,
         headers?: Record<string, string>
-
     ) {
 
         const apiClient = new ApiClient(world.request);
+
+        // Create request headers once per request
+        const requestHeaders = headers ?? getHeaders();
+
         logger.info("==============================================");
         logger.info(`HTTP Method : ${method}`);
         logger.info(`Request URL : ${endpoint}`);
-        logger.info(
-            `Request Headers :\n${JSON.stringify(headers ?? header, null, 2)}`
-        );
 
         logger.info(
-            `Request Headers :\n${JSON.stringify(headers ?? header, null, 2)}`
+            `Request Headers :\n${JSON.stringify(requestHeaders, null, 2)}`
         );
 
         if (requestBody) {
@@ -35,19 +35,30 @@ export class ApiExecutor {
         switch (method) {
 
             case "GET":
-                world.response = await apiClient.get(endpoint, headers);
+                world.response = await apiClient.get(endpoint, requestHeaders);
                 break;
 
             case "POST":
-                world.response = await apiClient.post(endpoint, requestBody, headers);
+                world.response = await apiClient.post(
+                    endpoint,
+                    requestBody,
+                    requestHeaders
+                );
                 break;
 
             case "PUT":
-                world.response = await apiClient.put(endpoint, requestBody, headers);
+                world.response = await apiClient.put(
+                    endpoint,
+                    requestBody,
+                    requestHeaders
+                );
                 break;
 
             case "DELETE":
-                world.response = await apiClient.delete(endpoint, headers);
+                world.response = await apiClient.delete(
+                    endpoint,
+                    requestHeaders
+                );
                 break;
         }
 
@@ -66,7 +77,6 @@ export class ApiExecutor {
             world.responseBody = null;
 
             logger.warn("Response Body : No JSON response returned.");
-
         }
 
         AllureHelper.attachRequest(
@@ -74,7 +84,7 @@ export class ApiExecutor {
             method,
             endpoint,
             requestBody,
-            headers ?? header
+            requestHeaders
         );
 
         AllureHelper.attachResponse(

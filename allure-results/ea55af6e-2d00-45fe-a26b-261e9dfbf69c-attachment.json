@@ -1,9 +1,0 @@
-{
-  "method": "PUT",
-  "url": "https://reqres.in/api/users/2",
-  "headers": {},
-  "body": {
-    "name": "Geneva_1783579390746",
-    "job": "Future Response Assistant"
-  }
-}

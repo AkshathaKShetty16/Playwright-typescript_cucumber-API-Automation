@@ -1,3 +1,5 @@
+import { Config } from "../config/config";
+
 const report = require("multiple-cucumber-html-reporter");
 
 report.generate({
@@ -33,7 +35,7 @@ report.generate({
     data: [
       { label: "Project", value: "API Automation" },
       { label: "Framework", value: "Playwright + Cucumber + TypeScript" },
-      { label: "Environment", value: process.env.ENVIRONMENT || "UAT" },
+      { label: "Environment", value: Config.environment || "UAT" },
       { label: "Executed By", value: "Akshatha Shetty" }
     ]
   }

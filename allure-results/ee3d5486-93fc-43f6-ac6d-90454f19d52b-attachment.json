@@ -1,9 +1,0 @@
-{
-  "method": "POST",
-  "url": "https://reqres.in/api/users",
-  "headers": {},
-  "body": {
-    "name": "Esther_1783579747378",
-    "job": "Central Tactics Analyst"
-  }
-}

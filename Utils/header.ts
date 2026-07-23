@@ -1,7 +1,5 @@
-import dotenv from 'dotenv';
+import { Config } from "../config/config";
 
-dotenv.config();
-
-export const header = {
-    'x-api-key': process.env.API_KEY!
-};
+export const getHeaders = (): Record<string, string> => ({
+    "x-api-key": Config.apiKey
+});

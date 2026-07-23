@@ -1,18 +1,18 @@
 import { APIRequestContext } from '@playwright/test';
-import { header } from './header';
+import { getHeaders } from "./header";
 
 export class ApiClient {
 
     constructor(private request: APIRequestContext) {}
 
-    async get(url: string, headers: Record<string, string> = header) {
+    async get(url: string, headers: Record<string, string> = getHeaders()) {
         return this.request.get(url, { headers });
     }
 
     async post(
         url: string,
         data: any,
-        headers: Record<string, string> = header
+        headers: Record<string, string> = getHeaders()
     ) {
         return this.request.post(url, {
             headers,
@@ -23,7 +23,7 @@ export class ApiClient {
     async put(
         url: string,
         data: any,
-        headers: Record<string, string> = header
+        headers: Record<string, string> = getHeaders()
     ) {
         return this.request.put(url, {
             headers,
@@ -33,7 +33,7 @@ export class ApiClient {
 
     async delete(
         url: string,
-        headers: Record<string, string> = header
+        headers: Record<string, string> = getHeaders()
     ) {
         return this.request.delete(url, {
             headers

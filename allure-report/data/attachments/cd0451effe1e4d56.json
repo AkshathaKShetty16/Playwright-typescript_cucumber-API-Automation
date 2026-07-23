@@ -1,9 +1,0 @@
-{
-  "method": "POST",
-  "url": "https://reqres.in/api/users",
-  "headers": {},
-  "body": {
-    "name": "Joshua_1783579131005",
-    "job": "National Intranet Manager"
-  }
-}

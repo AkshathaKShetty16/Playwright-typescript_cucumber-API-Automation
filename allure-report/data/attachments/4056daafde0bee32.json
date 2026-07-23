@@ -1,9 +1,0 @@
-{
-  "method": "PUT",
-  "url": "https://reqres.in/api/users/2",
-  "headers": {},
-  "body": {
-    "name": "Nettie_1783579264868",
-    "job": "Principal Intranet Associate"
-  }
-}
