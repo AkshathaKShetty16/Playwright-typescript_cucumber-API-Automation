@@ -75,6 +75,8 @@ pipeline {
             sh """
                 ENV=${params.ENV} npm run test:cucumber -- ${tagsArg}
             """
+            // Always generate HTML report
+           sh "npm run report:html"
         }
        }
         }
