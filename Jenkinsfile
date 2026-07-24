@@ -89,6 +89,15 @@ pipeline {
                 jdk: '',
                 results: [[path: 'allure-results']]
             ])
+
+            publishHTML([
+            allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'reports/html-report',
+            reportFiles: 'index.html',
+            reportName: 'Cucumber HTML Report'
+])
             // Keep raw results as a build artifact too (handy for debugging or regenerating locally)
             archiveArtifacts artifacts: 'allure-results/**/*', allowEmptyArchive: true
         }
