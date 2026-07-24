@@ -72,14 +72,19 @@ pipeline {
 
             echo "Running on ${params.ENV} with tags: ${params.TAGS ?: 'ALL'}"
 
-            sh """
-                ENV=${params.ENV} npm run test:cucumber -- ${tagsArg}
-            """
-            // Always generate HTML report
-           sh "npm run report:html"
+            // Continue even if tests fail
+            catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                sh """
+                    ENV=${params.ENV} npm run test:cucumber -- ${tagsArg}
+                """
+            }
+
+            echo "Generating Cucumber HTML Report..."
+
+            sh "npm run report:html"
         }
-       }
         }
+     }
     }
 
     post {
