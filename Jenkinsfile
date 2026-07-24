@@ -33,6 +33,7 @@ pipeline {
 
     environment {
         CI = 'true'
+        NOTIFY_EMAIL = 'akshathak2903@gmail.com'
         
     }
 
@@ -107,6 +108,63 @@ pipeline {
 ])
             // Keep raw results as a build artifact too (handy for debugging or regenerating locally)
             archiveArtifacts artifacts: 'allure-results/**/*', allowEmptyArchive: true
+
+            emailext(
+            to: "${env.NOTIFY_EMAIL}",
+
+            subject: "Playwright API Automation | ${params.ENV.toUpperCase()} | ${currentBuild.currentResult} | Build #${env.BUILD_NUMBER}",
+
+            mimeType: 'text/html',
+
+            body: """
+            <html>
+            <body>
+
+            <h2>Playwright API Automation Execution Summary</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <td><b>Build Number</b></td>
+                    <td>#${env.BUILD_NUMBER}</td>
+                </tr>
+                <tr>
+                    <td><b>Build Status</b></td>
+                    <td>${currentBuild.currentResult}</td>
+                </tr>
+                <tr>
+                    <td><b>Environment</b></td>
+                    <td>${params.ENV}</td>
+                </tr>
+                <tr>
+                    <td><b>Tags</b></td>
+                    <td>${params.TAGS?.trim() ? params.TAGS : 'ALL'}</td>
+                </tr>
+                <tr>
+                    <td><b>Duration</b></td>
+                    <td>${currentBuild.durationString}</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <b>Reports</b>
+
+             <ul>
+                <li><a href="${env.BUILD_URL}allure">Allure Report</a></li>
+                <li><a href="${env.BUILD_URL}Cucumber_HTML_Report/">Cucumber HTML Report</a></li>
+                <li><a href="${env.BUILD_URL}console">Console Output</a></li>
+            </ul>
+
+            <br>
+
+            Regards,<br>
+            Jenkins CI
+
+            </body>
+            </html>
+            """
+        )
+
         }
     }
 }
