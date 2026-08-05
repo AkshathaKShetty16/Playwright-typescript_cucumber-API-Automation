@@ -12,7 +12,7 @@ Feature: User Management
         Then the response status code should be 200
         And the response body should contain the user details "Janet"
 
-    @expectedfailures
+    @expectedfailureCases
     Scenario Outline: Get existing user details with different authentication
 
         Given the user ID "users/2" exists
