@@ -1,123 +1,69 @@
-                                      API AUTOMATION FRAMEWORK
-                         (Playwright + Cucumber + TypeScript)
+Playwright API Automation Framework
+Overview
 
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              Business Layer                                │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  📄 user.feature                                                           │
-│  • Business scenarios written in Gherkin (Given / When / Then)             │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           Execution Layer                                  │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  📂 step-definitions                                                       │
-│  • Maps Gherkin steps to TypeScript methods                                │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          Scenario Context Layer                            │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  hooks.ts                                                                  │
-│     • Before/After scenario setup                                          │
-│     • Creates API Request Context                                          │
-│                                                                             │
-│  world.ts                                                                  │
-│     • Stores request, response & shared scenario data                       │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        API Execution Layer                                 │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ apiExecutor.ts                                                             │
-│        │                                                                    │
-│        ├── Builds Request                                                  │
-│        ├── Calls API Client                                                │
-│        |                                         │
-│        ├── Logs Execution                                                  │
-│        └── Updates Allure Report                                           │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          Utility Layer                                     │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ apiClient.ts     → Sends HTTP requests                                     │
-│ headers.ts       → Reads headers/API key from .env                         │
-│ dataUtil.ts      → Generates dynamic test data using Faker                 │
-│ logger.ts        → Winston logging                                         │
-│ allureHelper.ts  → Request/Response attachments to Allure                  │
-│ helper.ts        → Common reusable utilities                               │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                     Configuration & Environment                            │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ .env          → Base URL, API Keys                                         │
-│ cucumber.js   → Cucumber configuration                                     │
-│ package.json  → Project dependencies & scripts                             │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           Reports & Logs                                  │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ logs/api.log                                                               │
-│ allure-results                                                             │
-│ allure-report                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+This repository contains a scalable API automation framework built using Playwright, TypeScript, and Cucumber. The framework follows a modular design, making it easy to add new APIs, manage test data, generate reports, and integrate with CI/CD pipelines.
 
-                    API Automation Execution Flow
+Tech Stack
+Technology	Purpose
+Playwright	API Testing
+TypeScript	Programming Language
+Cucumber	BDD Framework
+Allure	Test Reporting
+Faker	Dynamic Test Data
+Winston	Logging
+Jenkins	CI/CD
+dotenv	Environment Configuration
 
-      ┌───────────────┐
-      │ user.feature  │
-      │ Gherkin Steps │
-      └───────┬───────┘
-              │
-              ▼
-     ┌──────────────────┐
-     │ Step Definitions │
-     └───────┬──────────┘
-             │
-             ▼
-      ┌───────────────┐
-      │ hooks.ts      │
-      │ Create Context│
-      └───────┬───────┘
-              │
-              ▼
-      ┌───────────────┐
-      │ world.ts      │
-      │ Shared Data   │
-      └───────┬───────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ apiExecutor.ts       │
-      │ Orchestrates Request │
-      └───────┬──────────────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ apiClient.ts         │
-      │ Playwright API Call  │
-      └───────┬──────────────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ API Response         │
-      └───────┬──────────────┘
-              │
-     ┌────────┼─────────┐
-     ▼        ▼         ▼
-logger.ts  allureHelper  world.ts
-Winston    Report        Store Response
-     │        │              │
-     └────────┴──────────────┘
-              │
-              ▼
-      Allure Report + API Logs
+Features
+Playwright APIRequestContext implementation
+BDD using Cucumber
+Modular API client
+Centralized request execution
+Dynamic test data using Faker
+Environment-based configuration
+Reusable request headers
+Winston logging
+Allure reports
+HTML Cucumber reports
+Jenkins pipeline support
+TypeScript support
+Easy scalability
+
+
+Prerequisites
+Node.js 20+
+npm
+Git
+
+
+Installation
+git clone <repository-url>
+cd <repository-name>
+npm install
+
+Running Tests
+
+Run all tests:
+
+npm run test:cucumber
+
+Run specific tags:
+
+npm run test:cucumber -- --tags "@user"
+
+Reports
+
+After execution:
+
+Allure Report
+Multiple Cucumber HTML Report
+
+Generate Allure report:
+
+allure serve allure-results
+
+
+
+Author
+Akshatha Shetty
+Senior SDET | Playwright | API Automation | TypeScript | Cucumber | CI pipeline with Jenkins
