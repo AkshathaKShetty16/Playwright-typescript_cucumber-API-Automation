@@ -1,123 +1,65 @@
-                                      API AUTOMATION FRAMEWORK
-                         (Playwright + Cucumber + TypeScript)
+# Dependencies
+node_modules/
 
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              Business Layer                                │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  📄 user.feature                                                           │
-│  • Business scenarios written in Gherkin (Given / When / Then)             │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           Execution Layer                                  │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  📂 step-definitions                                                       │
-│  • Maps Gherkin steps to TypeScript methods                                │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          Scenario Context Layer                            │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  hooks.ts                                                                  │
-│     • Before/After scenario setup                                          │
-│     • Creates API Request Context                                          │
-│                                                                             │
-│  world.ts                                                                  │
-│     • Stores request, response & shared scenario data                       │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        API Execution Layer                                 │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ apiExecutor.ts                                                             │
-│        │                                                                    │
-│        ├── Builds Request                                                  │
-│        ├── Calls API Client                                                │
-│        ├── Stores Response                                                 │
-│        ├── Logs Execution                                                  │
-│        └── Updates Allure Report                                           │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                          Utility Layer                                     │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ apiClient.ts     → Sends HTTP requests                                     │
-│ headers.ts       → Reads headers/API key from .env                         │
-│ dataUtil.ts      → Generates dynamic test data using Faker                 │
-│ logger.ts        → Winston logging                                         │
-│ allureHelper.ts  → Request/Response attachments to Allure                  │
-│ helper.ts        → Common reusable utilities                               │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                     Configuration & Environment                            │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ .env          → Base URL, API Keys                                         │
-│ cucumber.js   → Cucumber configuration                                     │
-│ package.json  → Project dependencies & scripts                             │
-└───────────────────────────────┬─────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           Reports & Logs                                  │
-├─────────────────────────────────────────────────────────────────────────────┤
-│ logs/api.log                                                               │
-│ allure-results                                                             │
-│ allure-report                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+# Environment files
+.env
+.env.*
 
-                    API Automation Execution Flow
+# Allow sample environment file
+!.env.example
 
-      ┌───────────────┐
-      │ user.feature  │
-      │ Gherkin Steps │
-      └───────┬───────┘
-              │
-              ▼
-     ┌──────────────────┐
-     │ Step Definitions │
-     └───────┬──────────┘
-             │
-             ▼
-      ┌───────────────┐
-      │ hooks.ts      │
-      │ Create Context│
-      └───────┬───────┘
-              │
-              ▼
-      ┌───────────────┐
-      │ world.ts      │
-      │ Shared Data   │
-      └───────┬───────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ apiExecutor.ts       │
-      │ Orchestrates Request │
-      └───────┬──────────────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ apiClient.ts         │
-      │ Playwright API Call  │
-      └───────┬──────────────┘
-              │
-              ▼
-      ┌──────────────────────┐
-      │ API Response         │
-      └───────┬──────────────┘
-              │
-     ┌────────┼─────────┐
-     ▼        ▼         ▼
-logger.ts  allureHelper  world.ts
-Winston    Report        Store Response
-     │        │              │
-     └────────┴──────────────┘
-              │
-              ▼
-      Allure Report + API Logs
+# Logs
+logs/
+*.log
+
+# Allure Reports
+allure-results/
+allure-report/
+
+# Playwright Reports
+playwright-report/
+test-results/
+
+# Cucumber Reports
+reports/
+cucumber-report/
+cucumber-html-report/
+
+# Coverage
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+these files/folders should be committed:
+
+features/
+utils/
+testData/
+package.json
+package-lock.json
+tsconfig.json
+cucumber.js
+Jenkinsfile
+README.md
+.gitignore
+
+
+These should NOT be committed:
+
+node_modules/
+.env
+logs/
+allure-results/
+allure-report/
+playwright-report/
+test-results/
+coverage/
