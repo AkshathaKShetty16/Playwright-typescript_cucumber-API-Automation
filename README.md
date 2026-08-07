@@ -66,4 +66,4 @@ allure serve allure-results
 
 Author
 Akshatha Shetty
-Senior SDET | Playwright | API Automation | TypeScript | Cucumber
+Senior SDET | Playwright | API Automation | TypeScript | Cucumber | CI pipeline with Jenkins
